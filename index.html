@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarih Oyunu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="theme-selection">
+        <button class="themebtn" id="themebtn"  onclick="toggleTheme('black-theme')">Siyah Tema</button>
+        
+    </div>
+
+
+
+    <div class="container">
+        <h1 class="tarihbaslik">Tarih Soru-Cevap Oyunu</h1>
+        <div id="category-selection">
+            
+
+            <div class="sub_category">
+
+                <button class="accordion">
+                    <h3>Yerleşme ve Devletleşme Sürecinde Selçuklu Türkiyesi</h3>
+                </button>
+                <div class="panel">
+                    <label for="10.1.1"> <input type="checkbox" class="sub_category_input" id="10.1.1" value="10.1.1"> 10.1.1 Türklerin Anadolu’ya
+                        yerleşmeye başlaması ile Türkiye Selçuklu Devleti’nin yıkılışı arasındaki süreçte meydana gelen
+                        başlıca siyasi gelişmeleri tarih şeridi ve haritalar üzerinde gösterir.</label>
+                    <label for="10.1.2"> <input type="checkbox" class="sub_category_input" id="10.1.2" value="10.1.2"> 10.1.2 Anadolu’ya yapılan Türk
+                        göçlerinin sosyokültürel etkilerini analiz eder.</label>
+                    <label for="10.1.3"> <input type="checkbox" class="sub_category_input" id="10.1.3" value="10.1.3"> 10.1.3 Anadolu’daki ilk Türk siyasi
+                        teşekküllerinin birbirleriyle ve çevre devletlerle olan ilişkilerini uzlaşma ve çatışma
+                        bağlamında değerlendirir.</label>
+                    <label for="10.1.4"> <input type="checkbox" class="sub_category_input" id="10.1.4" value="10.1.4"> 10.1.4 İslam dünyasının korunması
+                        bağlamında Türkiye Selçuklu Devleti ve Eyyubi Devleti’nin Haçlılarla yaptıkları mücadelelerin
+                        sosyokültürel etkilerini analiz eder.</label>
+                    <label for="10.1.5"> <input type="checkbox" class="sub_category_input" id="10.1.5" value="10.1.5"> 10.1.5 Moğol İstilası’nın
+                        Anadolu’da meydana getirdiği siyasi ve sosyal değişimi analiz eder.</label>
+                </div>
+                <button class="accordion">
+                    <h3>Beylikten Devlete Osmanlı Siyaseti (1302-1453)</h3>
+                </button>
+                <div class="panel">
+                    <label for="10.2.1"> <input type="checkbox" class="sub_category_input" id="10.2.1" value="10.2.1"> 10.2.1 1302-1453 yılları arasındaki
+                        süreçte meydana gelen başlıca siyasi gelişmeleri tarih şeridi ve haritalar üzerinde
+                        gösterir.</label>
+                    <label for="10.2.2"> <input type="checkbox" class="sub_category_input" id="10.2.2" value="10.2.2"> 10.2.2 Osmanlı Beyliği’nin
+                        devletleşme sürecini Bizans’la olan ilişkileri çerçevesinde analiz eder.</label>
+                    <label for="10.2.3"> <input type="checkbox" class="sub_category_input" id="10.2.3" value="10.2.3"> 10.2.3 Rumeli’deki fetihler ile
+                        iskân (şenlendirme) ve istimâlet politikalarının amaçlarını ve etkilerini analiz eder.</label>
+                    <label for="10.2.4"> <input type="checkbox" class="sub_category_input" id="10.2.4" value="10.2.4"> 10.2.4 Osmanlı Devleti’nin
+                        Anadolu’da Türk siyasi birliğini sağlamaya yönelik faaliyetlerini ve sonuçlarını analiz
+                        eder.</label>
+                </div>
+                <button class="accordion">
+                    <h3>Devletleşme Sürecinde Savaşçılar ve Askerler</h3>
+                </button>
+                <div class="panel">
+                    <label for="10.3.1"> <input type="checkbox" class="sub_category_input" id="10.3.1" value="10.3.1"> 10.3.1 Kuruluş Dönemi’nde Osmanlı
+                        askerî gücünü oluşturan farklı muharip unsurları açıklar.</label>
+                    <label for="10.3.2"> <input type="checkbox" class="sub_category_input" id="10.3.2" value="10.3.2"> 10.3.2 Tımar sisteminin
+                        özelliklerini siyasi, sosyal ve ekonomik açılardan değerlendirir</label>
+                    <label for="10.3.3"> <input type="checkbox" class="sub_category_input" id="10.3.3" value="10.3.3"> 10.3.3 Yeniçeri Ocağı’nın ve
+                        devşirme sisteminin Osmanlı devletleşme sürecine etkisini analiz eder</label>
+                </div>
+                <button class="accordion">
+                    <h3>Beylikten Devlete Osmanlı Medeniyeti</h3>
+                </button>
+                <div class="panel">
+                    <label for="10.4.1"> <input type="checkbox" class="sub_category_input" id="10.4.1" value="10.4.1"> 10.4.1 Sûfîlerin ve âlimlerin
+                        öğretilerinin Anadolu’nun İslamlaşmasına etkisini açıklar.</label>
+                    <label for="10.4.2"> <input type="checkbox" class="sub_category_input" id="10.4.2" value="10.4.2"> 10.4.2 Osmanlı devlet idaresinin
+                        ilmiye, kalemiye ve seyfiye sınıflarının birlikteliğine dayalı yapısını analiz eder.</label>
+                    <label for="10.4.3"> <input type="checkbox" class="sub_category_input" id="10.4.3" value="10.4.3"> 10.4.3 Osmanlı coğrafyasındaki
+                        bilim, kültür, sanat ve zanaat faaliyetleri ile bunlara bağlı olarak sosyal hayatta meydana
+                        gelen değişimleri analiz eder</label>
+                </div>
+                <button class="accordion">
+                    <h3>Dünya Gücü Osmanlı (1453-1595)</h3>
+                </button>
+                <div class="panel">
+                    <label for="10.5.1"> <input type="checkbox" class="sub_category_input" id="10.5.1" value="10.5.1"> 10.5.1 1453-1520 yılları arasındaki
+                        süreçte meydana gelen başlıca siyasi gelişmeleri tarih şeridi ve haritalar üzerinde
+                        gösterir.</label>
+                    <label for="10.5.2"> <input type="checkbox" class="sub_category_input" id="10.5.2" value="10.5.2"> 10.5.2 İstanbul’un fetih sürecini
+                        sebepleri ve stratejik sonuçları açısından analiz eder.</label>
+                    <label for="10.5.3"> <input type="checkbox" class="sub_category_input" id="10.5.3" value="10.5.3"> 10.5.3 Osmanlı Devleti’nin İslam
+                        coğrafyasında hâkimiyet kurmasının Türk ve İslam dünyası üzerindeki etkilerini analiz
+                        eder.</label>
+                    <label for="10.5.4"> <input type="checkbox" class="sub_category_input" id="10.5.4" value="10.5.4"> 10.5.4 1520-1595 yılları arasındaki
+                        süreçte meydana gelen başlıca siyasi gelişmeleri tarih şeridi ve haritalar üzerinde
+                        gösterir.</label>
+                    <label for="10.5.5"> <input type="checkbox" class="sub_category_input" id="10.5.5" value="10.5.5"> 10.5.5 Kanuni Döneminden itibaren
+                        Osmanlı Devleti’nin eriştiği olgunluğu siyasi sınırlar ve devlet teşkilatı açısından
+                        açıklar.</label>
+                    <label for="10.5.6"> <input type="checkbox" class="sub_category_input" id="10.5.6" value="10.5.6"> 10.5.6 Uyguladığı uzun vadeli
+                        stratejinin Osmanlı Devleti’nin dünya gücü haline gelmesindeki rolünü analiz eder.</label>
+                    <label for="10.5.7"> <input type="checkbox" class="sub_category_input" id="10.5.7" value="10.5.7">10.5.7 Osmanlı Devleti’nin takip
+                        ettiği kara ve deniz politikalarını analiz eder.</label>
+                </div>
+                <button class="accordion">
+                    <h3>Sultan ve Osmanlı Merkez Teşkilatı</h3>
+                </button>
+                <div class="panel">
+                    <label for="10.6.1"> <input type="checkbox" class="sub_category_input" id="10.6.1" value="10.6.1"> 10.6.1 Topkapı Sarayı’nın devlet
+                        idaresinin yanı sıra devlet adamı yetiştirilmesinde ve şehir kültürünün gelişmesindeki rollerini
+                        analiz eder.</label>
+                    <label for="10.6.2"> <input type="checkbox" class="sub_category_input" id="10.6.2" value="10.6.2"> 10.6.2 Osmanlı Devleti’nde merkezî
+                        otoriteyi güçlendirmeye yönelik düzenlemeleri analiz eder.</label>
+                </div>
+                <button class="accordion">
+                    <h3>Klasik Çağda Osmanlı Toplum Düzeni</h3>
+                </button>
+                <div class="panel">
+                    <label for="10.7.1"> <input type="checkbox" class="sub_category_input" id="10.7.1" value="10.7.1"> 10.7.1 Osmanlı Devleti’nde millet
+                        sisteminin yapısını analiz eder.</label>
+                    <label for="10.7.2"> <input type="checkbox" class="sub_category_input" id="10.7.2" value="10.7.2"> 10.7.2 Osmanlı Devleti’nin
+                        fethettiği yerleşim yerlerinin İslam kültürünün etkisiyle geçirdiği dönüşümü analiz
+                        eder.</label>
+                    <label for="10.7.3"> <input type="checkbox" class="sub_category_input" id="10.7.3" value="10.7.3"> 10.7.3 Osmanlı ekonomik sistemi
+                        içerisinde tarımsal üretimin önemini açıklar.</label>
+                    <label for="10.7.4"> <input type="checkbox" class="sub_category_input" id="10.7.4" value="10.7.4"> 10.7.4 Lonca Teşkilatının Osmanlı
+                        ekonomik sistemi ve toplum yapısındaki yerini analiz eder.</label>
+                    <label for="10.7.5"> <input type="checkbox" class="sub_category_input" id="10.7.5" value="10.7.5"> 10.7.5 Osmanlı Devleti’nde
+                        vakıfların sosyal hayattaki yerini ve önemini açıklar.</label>
+                </div>
+            </div>
+            <button class="startbtn" onclick="startTest()">Teste Başla</button>
+        </div>
+        <div id="quiz-container" style="display: none;">
+            <div id="question-container"></div>
+            <div class="options">
+                <div class="option" onclick="checkAnswer(this)"></div>
+                <div class="option" onclick="checkAnswer(this)"></div>
+                <div class="option" onclick="checkAnswer(this)"></div>
+                <div class="option" onclick="checkAnswer(this)"></div>
+                <div class="option" onclick="checkAnswer(this)"></div>
+            </div>
+            <div id="result"></div>
+            <button id="next-btn" onclick="nextQuestion()" style="display: none;">Sonraki Soru</button>
+            <div id="score" style="display: none;">Toplam doğru: <span id="correct-count">0</span> </div>
+        </div>
+
+        <div class="restartContainer">
+            <button class="restart-btn" onclick="restartTest()">Yeniden Başla</button>
+            <div id="confirmation" style="display: none;">
+                <div class="confirm-message">Testi yeniden başlatmak istediğinize emin misiniz?</div>
+                <button class="confirmbtn" onclick="confirmRestart()">Evet</button>
+                <button class="confirmbtn" onclick="cancelRestart()">Hayır</button>
+            </div>
+
+        </div>
+
+        
+
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

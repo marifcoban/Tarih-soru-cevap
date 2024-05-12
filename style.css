@@ -1,0 +1,263 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    max-width: 950px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    animation: slideIn 1s ease;
+}
+
+#category-selection {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#category {
+    padding: 5px;
+}
+
+#quiz-container {
+    animation: slideIn 1s ease;
+}
+
+#question-container {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.option {
+    width: 200px;
+    margin: 10px;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option:hover {
+    background-color: #45a049;
+}
+
+#result {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#next-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#score {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    display: none;
+}
+
+.restartContainer {
+    margin-top: 1rem;
+}
+
+.restart-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sub_category {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: left;
+    padding: 1rem;
+
+}
+
+.accordion {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.accordion:hover {
+    background-color: #ccc;
+    transition: 0.2s ease-out;
+}
+
+.panel {
+    padding: 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 2.4s;
+}
+.panel.active{
+    display: block;
+    opacity: 1;
+}
+
+.panel>label {
+    display: block;
+}
+
+
+.incorrect-answer {
+    transition: background-color 1s ease;
+    /* Animasyon süresi ve geçiş efekti */
+}
+
+.startbtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.confirmbtn {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Siyah/Gri Tema */
+body.black-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+.black-theme .accordion {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #222;
+    border-radius: 10px;
+    color: #f0f0f0;
+}
+
+.black-theme .accordion:hover {
+    background: #333333;
+}
+
+.black-theme .container {
+    background-color: #333;
+    /* Siyah/gri arka plan rengi */
+    color: #fff;
+    /* Beyaz yazı rengi */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.black-theme .tarihbaslik {
+    color: white;
+}
+
+.black-theme .panel {
+    background-color: #444;
+    border-radius: 15px;
+}
+
+.black-theme {
+    background-color: #333;
+}
+
+.black-theme #question-container {
+    background-color: #333;
+    color: #fff;
+    /* Sorunun yazı rengi beyaz olacak */
+}
+
+
+/* Temel düğme stili */
+.themebtn {
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    /* Yeşil renk */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+/* Düğme hover durumu */
+.themebtn:hover {
+    background-color: #45a049;
+    /* Koyu yeşil renk */
+}
+
+/* Düğme aktif durumu */
+.themebtn:active {
+    background-color: #3e8e41;
+    /* Daha koyu yeşil renk */
+}
+
+
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
